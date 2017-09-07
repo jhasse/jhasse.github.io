@@ -1,3 +1,7 @@
+---
+title: Bixense
+---
+
 # bixense.com
 
 <img src="logo.svg" id="logo"/>
