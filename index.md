@@ -1,5 +1,5 @@
 ---
-title: Bixense Game Studios
+layout: home
 ---
 
 This site is under construction.
