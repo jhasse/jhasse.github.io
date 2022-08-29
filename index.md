@@ -2,4 +2,4 @@
 layout: home
 ---
 
-This site is under construction.
+[Boomshine Plus](boomshineplus/) now available!

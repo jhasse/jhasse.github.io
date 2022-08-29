@@ -4,8 +4,8 @@ title: Contact
 ---
 
 Jan Niklas Hasse<br/>
-Im Hollergrund 45<br/>
-28357 Bremen
+Keplerstraße 13<br/>
+28203 Bremen
 
-Telephone: +4942136484944<br/>
+Telephone: +4942156346591<br/>
 E-Mail: <a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a>
