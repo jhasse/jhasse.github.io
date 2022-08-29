@@ -2,6 +2,7 @@
 layout: home
 permalink: /privacy/
 exclude: true
+title: ""
 ---
 
 # Privacy Policy
