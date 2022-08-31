@@ -40,11 +40,11 @@ ul#badges li a {
             <img src='../Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg' width="186px"/>
         </a>
     </li>
-    <!-- <li>
+    <li>
         <a href='https://play.google.com/store/apps/details?id=com.bixense.BoomshinePlus'>
             <img alt='Get it on Google Play' src='../Google_Play_Store_badge_EN.svg' width="192px"/>
         </a>
-    </li> -->
+    </li>
     <li>
         <a href="https://www.xbox.com/de-de/games/store/boomshine-plus/9n7zszcjwlbf">
             <img src='../Get_it_from_Microsoft_Badge.svg' width="176px"/>
@@ -53,4 +53,4 @@ ul#badges li a {
 </ul>
 
 <br/>
-Coming soon to Android and Steam!
+Coming soon to Steam!
