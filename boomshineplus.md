@@ -36,7 +36,7 @@ ul#badges li a {
 <img style="float:right;padding-left:15px" src="../boomshineplus.png" width="96px"/>
 </li> -->
     <li>
-        <a href="#">
+        <a href="https://apps.apple.com/us/app/boomshine-plus/id1621925247">
             <img src='../Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg' width="186px"/>
         </a>
     </li>
