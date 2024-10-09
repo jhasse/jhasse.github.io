@@ -12,3 +12,10 @@ jekyll serve
 
 ```
 sudo apt install jekyll jekyll-theme-minima
+```
+
+## Fedora
+
+```
+sudo dnf install rubygem-minima
+```
