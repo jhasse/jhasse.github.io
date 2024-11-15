@@ -19,3 +19,9 @@ sudo apt install jekyll jekyll-theme-minima
 ```
 sudo dnf install rubygem-minima
 ```
+
+## macOS
+
+```
+gem install jekyll-theme-minima
+```
