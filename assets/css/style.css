@@ -14,7 +14,6 @@ body {
 header {
   background-color: #fff;
   border-bottom: 1px solid #ddd;
-  padding: 20px 0;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -24,18 +23,24 @@ header nav {
   padding: 0 20px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: stretch;
   flex-wrap: wrap;
   gap: 20px;
+  min-height: 64px;
 }
 
 header h1 {
   font-size: 24px;
+  display: flex;
+  align-items: center;
 }
 
 header h1 a {
   text-decoration: none;
   color: #333;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
 }
 
 header h1 a:hover {
@@ -45,8 +50,9 @@ header h1 a:hover {
 header ul {
   list-style: none;
   display: flex;
-  gap: 30px;
+  gap: 0;
   flex-wrap: wrap;
+  align-items: stretch;
 }
 
 @media (max-width: 600px) {
@@ -56,14 +62,23 @@ header ul {
   }
 }
 
-header a {
-  text-decoration: none;
-  color: #333;
-  transition: color 0.3s;
+header ul li {
+  display: flex;
+  align-items: stretch;
 }
 
-header a:hover {
+header ul a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s, background-color 0.3s;
+  padding: 20px 20px;
+  display: flex;
+  align-items: center;
+}
+
+header ul a:hover {
   color: #0066cc;
+  background-color: rgba(0, 102, 204, 0.05);
 }
 
 main {
@@ -154,13 +169,17 @@ footer img {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
   }
 
-  header h1 a,
-  header a {
+  header h1 a {
     color: #e5e7eb;
   }
 
-  header a:hover {
+  header ul a {
+    color: #e5e7eb;
+  }
+
+  header ul a:hover {
     color: #93c5fd;
+    background-color: rgba(147, 197, 253, 0.1);
   }
 
   article {
