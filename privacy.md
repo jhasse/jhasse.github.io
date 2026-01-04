@@ -1,10 +1,8 @@
 ---
-layout: home
+layout: page
 permalink: /privacy/
 exclude: true
-title: ""
+title: "Privacy Policy"
 ---
-
-# Privacy Policy
 
 We don't collect any data in our games.
