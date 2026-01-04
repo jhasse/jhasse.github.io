@@ -25,6 +25,8 @@ header nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 header h1 {
@@ -44,6 +46,14 @@ header ul {
   list-style: none;
   display: flex;
   gap: 30px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 600px) {
+  header ul {
+    justify-content: center;
+    width: 100%;
+  }
 }
 
 header a {
