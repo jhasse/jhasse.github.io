@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-    <link rel="stylesheet" href="/assets/css/style.css">
-  </head>
-  <body>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body>
+  <div id="main-bg">
     <header>
       <nav>
         <h1><a href="/">{{ site.title }}</a></h1>
@@ -20,10 +23,13 @@
     <main>
       {{ content }}
     </main>
+  </div>
 
-    <footer>
-      <p>&copy; 2026 {{ site.title }}</p>
-      <p><a href="https://bsky.app/profile/bixense.com"><img style="vertical-align:middle;margin-bottom:4px" src="/Bluesky_Logo.svg" width="18px"> bixense.com</a></p>
-    </footer>
-  </body>
+  <footer>
+    <p>&copy; 2026 {{ site.title }}</p>
+    <p><a href="https://bsky.app/profile/bixense.com"><img style="vertical-align:middle;margin-bottom:4px"
+          src="/Bluesky_Logo.svg" width="18px"> bixense.com</a></p>
+  </footer>
+</body>
+
 </html>
