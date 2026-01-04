@@ -1,3 +1,27 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/assets/fonts/Montserrat-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/assets/fonts/Montserrat-ExtraBold.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/assets/fonts/Montserrat-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -38,13 +62,49 @@ header h1 {
 header h1 a {
   text-decoration: none;
   color: #333;
-  padding: 20px 0;
+  padding: 12px 0;
   display: flex;
   align-items: center;
+  transition: all 0.3s ease;
 }
 
-header h1 a:hover {
-  color: #0066cc;
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 1;
+  gap: -2px;
+  margin-left: 15px;
+}
+
+.logo-main {
+  font-family: 'Montserrat', 'Arial Black', sans-serif;
+  font-weight: 900;
+  font-size: 32px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background: linear-gradient(135deg, #ff6b35 0%, #f7931e 50%, #ffd23f 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  filter: drop-shadow(2px 2px 3px rgba(255, 107, 53, 0.3));
+  transition: all 0.3s ease;
+}
+
+.logo-sub {
+  font-family: 'Montserrat', 'Arial Black', sans-serif;
+  font-weight: 800;
+  font-size: 15.5px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  background: linear-gradient(135deg, #d94a1a 0%, #c6740f 50%, #d9a91f 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+header h1 a:hover .logo-main {
+  filter: drop-shadow(2px 2px 5px rgba(255, 107, 53, 0.5));
 }
 
 header ul {
@@ -60,6 +120,16 @@ header ul {
     justify-content: center;
     width: 100%;
   }
+
+  header h1 {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .logo-container {
+    align-items: center;
+    margin-left: 0;
+  }
 }
 
 header ul li {
@@ -74,6 +144,8 @@ header ul a {
   padding: 20px 20px;
   display: flex;
   align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
 }
 
 header ul a:hover {
@@ -90,12 +162,14 @@ header ul a.active {
 main {
   max-width: 1200px;
   margin: auto;
-  padding: 40px 20px;
+  padding: 40px 20px 50px;
 }
 
 article h1 {
   margin-bottom: 20px;
   font-size: 32px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
 }
 
 article {
