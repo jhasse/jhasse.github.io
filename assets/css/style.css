@@ -9,9 +9,6 @@ body {
   line-height: 1.6;
   color: #333;
   background-color: #f9f9f9;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
 }
 
 header {
@@ -70,11 +67,9 @@ header a:hover {
 }
 
 main {
-  width: 100%;
-  max-width: 1400px;
+  max-width: 1200px;
   margin: 40px auto;
-  padding: 0 28px;
-  flex: 1 1 auto;
+  padding: 0 20px;
 }
 
 article h1 {
@@ -87,7 +82,6 @@ article {
   padding: 30px;
   border-radius: 4px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-  width: 100%;
 }
 
 article p {
