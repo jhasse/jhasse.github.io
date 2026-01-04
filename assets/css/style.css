@@ -98,3 +98,17 @@ footer {
 footer p {
   margin: 0;
 }
+
+footer a {
+  color: #1da1f2;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #66baee;
+}
+
+footer img {
+  vertical-align: middle;
+  margin-right: 6px;
+}
