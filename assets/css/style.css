@@ -81,6 +81,12 @@ header ul a:hover {
   background-color: rgba(0, 102, 204, 0.05);
 }
 
+header ul a.active {
+  color: #0066cc;
+  background-color: rgba(0, 102, 204, 0.1);
+  font-weight: 600;
+}
+
 main {
   max-width: 1200px;
   margin: auto;
@@ -180,6 +186,12 @@ footer img {
   header ul a:hover {
     color: #93c5fd;
     background-color: rgba(147, 197, 253, 0.1);
+  }
+
+  header ul a.active {
+    color: #93c5fd;
+    background-color: rgba(147, 197, 253, 0.15);
+    font-weight: 600;
   }
 
   article {
