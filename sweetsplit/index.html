@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sweet Split</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Sweet Split" />
+	<meta property="og:description" content="Addictive JezzBall Arcade Fun" />
+	<meta property="og:image" content="https://bixense.com/sweetsplit/poster.jpg" />
+	<link rel="icon" type="image/x-icon" href="../favicon.ico">
+	<style type="text/css">
+		.box.flex {
+			display: flex;
+			flex-wrap: wrap;
+		}
+		.center {
+			justify-content: center;
+			gap: 14px;
+		}
+		.badges {
+			align-items: center;
+			gap: 20px;
+		}
+
+		.box {
+			color: #111111;
+			font: 20px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+		}
+
+		.box div {
+			max-width: 800px;
+			text-align: center;
+		}
+
+		* {
+			padding: 0;
+			margin: 0;
+		}
+
+		p {
+			text-align: left;
+			margin-bottom: 1em;
+			padding-left: 0.2em;
+			color: #fff;
+		}
+
+		a {
+			color: #1da1f2;
+			text-decoration: none;
+		}
+		a:hover {
+			color: #66baee;
+		}
+
+		body {
+			background: #000;
+		}
+
+		.video-col {
+			width: 100%;
+			max-width: 420px;
+		}
+
+		.container {
+			position: relative;
+			width: 100%;
+			height: 0;
+			padding-bottom: 56.25%;
+		}
+		.video {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			border-radius: 8px;
+			background: #000;
+		}
+
+		.gallery {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			gap: 10px;
+			max-width: 1100px;
+			margin: 1em auto 3em;
+			padding: 0 1em;
+		}
+		.gallery a {
+			display: block;
+			line-height: 0;
+		}
+		.gallery img {
+			width: 260px;
+			max-width: 42vw;
+			border-radius: 8px;
+			box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+			display: block;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="box flex center">
+		<div class="video-col">
+			<div class="container">
+				<video id="preview-video" class="video" poster="poster.jpg" controls autoplay loop muted playsinline preload="auto">
+					<source src="preview.mp4" type="video/mp4">
+				</video>
+			</div>
+		</div>
+		<div style="padding:1em; max-width: 620px">
+			<p>
+				<b>Addictive JezzBall Arcade Fun</b>
+			</p>
+			<div class="box flex badges">
+				<div>
+					<a href="https://apps.apple.com/us/app/sweet-split/id588571983">
+						<img src='../Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg' width="186px" />
+					</a>
+				</div>
+				<div>
+					<a href='https://play.google.com/store/apps/details?id=com.bixense.sweet_split'>
+						<img alt='Get it on Google Play' src='../Google_Play_Store_badge_EN.svg' width="192px" />
+					</a>
+				</div>
+			</div>
+			<p style="margin-top: 1em;">
+				Sweet Split takes the classic JezzBall arcade challenge and gives it a fresh twist: draw your lines
+				in ANY direction – not just up, down, left or right! Drag your finger at any angle to split the
+				bouncing sweets apart and fill 75% of the free space to clear the level! Sounds easy? Every level
+				adds one more sweet to dodge. The board gets crowded, the bouncing gets wild, and one wrong line
+				costs you a life. How far can you make it?
+			</p>
+			<p style="color: #ddd; font-size: 18px">
+				© 2012-2026 Bixense Game Studios | <a href="/contact/">Contact</a>
+			</p>
+		</div>
+	</div>
+	<div class="gallery">
+		<a href="screenshot_01.png"><img src="thumbs/screenshot_01.jpg" alt="Sweet Split screenshot 1" loading="lazy"></a>
+		<a href="screenshot_02.png"><img src="thumbs/screenshot_02.jpg" alt="Sweet Split screenshot 2" loading="lazy"></a>
+		<a href="screenshot_03.png"><img src="thumbs/screenshot_03.jpg" alt="Sweet Split screenshot 3" loading="lazy"></a>
+		<a href="screenshot_04.png"><img src="thumbs/screenshot_04.jpg" alt="Sweet Split screenshot 4" loading="lazy"></a>
+		<a href="screenshot_05.png"><img src="thumbs/screenshot_05.jpg" alt="Sweet Split screenshot 5" loading="lazy"></a>
+		<a href="screenshot_06.png"><img src="thumbs/screenshot_06.jpg" alt="Sweet Split screenshot 6" loading="lazy"></a>
+		<a href="screenshot_07.png"><img src="thumbs/screenshot_07.jpg" alt="Sweet Split screenshot 7" loading="lazy"></a>
+		<a href="screenshot_08.png"><img src="thumbs/screenshot_08.jpg" alt="Sweet Split screenshot 8" loading="lazy"></a>
+		<a href="screenshot_09.png"><img src="thumbs/screenshot_09.jpg" alt="Sweet Split screenshot 9" loading="lazy"></a>
+		<a href="screenshot_10.png"><img src="thumbs/screenshot_10.jpg" alt="Sweet Split screenshot 10" loading="lazy"></a>
+	</div>
+	<script>
+		// Some browsers ignore the autoplay attribute (e.g. if the video isn't
+		// immediately ready), so trigger playback explicitly as a fallback.
+		var video = document.getElementById('preview-video');
+		video.muted = true;
+		var tryPlay = function () {
+			video.play().catch(function () {});
+		};
+		if (video.readyState >= 2) {
+			tryPlay();
+		} else {
+			video.addEventListener('loadeddata', tryPlay, { once: true });
+		}
+	</script>
+</body>
+</html>
